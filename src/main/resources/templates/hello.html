@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin: 3.5mm 16mm;
+            line-height: 9mm;
+            text-indent: 13mm;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+
+        span {
+            position: absolute;
+        }
+
+        .en {
+            font-family: Microsoft YaHei;
+        }
+    </style>
+</head>
+
+<body>
+
+<div style="padding: 20px">
+
+    <div style="font-size: 24px;margin-bottom: 20px;text-align: center;">OPPO协议</div>
+    <div style="position:relative;margin-bottom: 180px">
+        <p style="font-size: 16px;margin-bottom: 10px">姓名：<span th:text="${name}"></span></p>
+        <p style="font-size: 16px;margin-bottom: 10px">身份证号：<span th:text="${idcard}"></span></p>
+        <p style="margin-bottom: 10px;text-indent: 2em;">
+            这是协议这是协议这是协议这是协议这是协议这是协议这是协议这是协议1、这是协议这是协议这是协议这是协议这是协议这是协议这是协议这是协议1、这是协议这是协议这是协议这是协议这是协议这是协议这是协议这是协议1、这是协议这是协议这是协议这是协议这是协议这是协议这是协议这是协议
+        </p>
+        <p style="margin-bottom: 10px;text-indent: 2em;">
+            未经批准，禁止携带含有存储功能、传输功能的设备进入场地。未经批准，禁止携带含有存储功能、传输功能的设备进入场地。未经批准，禁止携带含有存储功能、传输功能的设备进入场地。未经批准，禁止携带含有存储功能、传输功能的设备进入场地。
+        </p>
+        <p style="margin-bottom: 10px;text-indent: 2em;">
+            我已经阅读以上信息并同意：<span th:text="${sign}"></span>
+        </p>
+
+        <img style="position: absolute; z-index: -1; left: 0; top: 0; width: 272mm; height: 183.6mm;"
+             src="/Users/mashuai/work/java/my/code/freemarker-html2pdf/htmltopdf/src/main/resources/images/cert_background.png"/>
+
+    </div>
+</div>
+</body>
+</html>

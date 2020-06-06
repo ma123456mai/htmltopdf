@@ -1,0 +1,18 @@
+
+server:
+  port: 8888
+
+spring:
+  #参考链接 https://blog.csdn.net/a1194821568/article/details/90719896
+  thymeleaf:
+    ##在构建URL时附加到视图名称的后缀。
+    suffix: .html
+    #模板编码
+    encoding: UTF-8
+    servlet:
+      #写入HTTP响应的Content-Type值
+      content-type: text/html
+    #开启模板缓存（默认值：true）一般都会改成false 因为缓存会影响页面的实时显示
+    cache: false
+    #在构建URL时添加到视图名称前的前缀（默认值：classpath:/templates/）
+    prefix: classpath:/templates/
